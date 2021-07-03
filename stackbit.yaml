@@ -262,7 +262,7 @@ models:
     type: page
     urlPath: /blog
     label: Blog
-    layout: blog
+    layout: APHID RASA Medical Dictionary
     file: blog/index.md
     hideContent: true
     singleInstance: true
