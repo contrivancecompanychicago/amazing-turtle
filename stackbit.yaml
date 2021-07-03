@@ -226,38 +226,6 @@ models:
       - type: image
         name: photo
         label: Photo
-  landing:
-    type: page
-    label: Landing Page
-    layout: landing
-    hideContent: true
-    fields:
-      - type: string
-        name: title
-        label: Title
-        description: The title of the page
-        required: true
-      - type: list
-        name: sections
-        label: Sections
-        description: Page sections
-        items:
-          type: model
-          models:
-            - section_content
-            - section_cta
-            - section_faq
-            - section_features
-            - section_hero
-            - section_posts
-            - section_pricing
-            - section_reviews
-            - section_contact
-      - type: model
-        name: seo
-        models:
-          - stackbit_page_meta
-        label: Seo
   APHID RASA Medical Dictionary:
     type: page
     urlPath: /blog
