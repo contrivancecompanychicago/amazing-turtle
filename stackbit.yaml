@@ -228,18 +228,31 @@ models:
         label: Photo
   APHID RASA Medical Dictionary:
     type: page
-    urlPath: /blog
-    label: Blog
+    label: Landing Page
     layout: APHID RASA Medical Dictionary
-    file: blog/index.md
     hideContent: true
-    singleInstance: true
     fields:
       - type: string
         name: title
         label: Title
         description: The title of the page
         required: true
+      - type: list
+        name: sections
+        label: Sections
+        description: Page sections
+        items:
+          type: model
+          models:
+            - section_content
+            - section_cta
+            - section_faq
+            - section_features
+            - section_hero
+            - section_posts
+            - section_pricing
+            - section_reviews
+            - section_contact
       - type: model
         name: seo
         models:
